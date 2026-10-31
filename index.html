@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dylan Venditti, Robotics Engineering</title>
+  <meta name="description" content="Dylan Venditti works on control for assistive and autonomous robots. M.Eng. student in Robotics and Autonomy at Duke; B.S. Biological Engineering, LSU. Projects, research interests, experience and contact.">
+  <meta name="theme-color" content="#ECF1E6">
+  <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ECF1E6'/%3E%3Crect x='3' y='3' width='26' height='26' fill='none' stroke='%231C2A4A' stroke-width='2.5'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial,sans-serif' font-weight='800' font-size='15' fill='%231C2A4A'%3EDV%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header-inner">
+      <a class="wordmark" href="#top">D. Venditti</a>
+      <nav aria-label="Sections">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#current">Current work</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO: your name, a one-sentence summary, and the title block of key facts -->
+    <section class="hero wrap" id="top" aria-label="Introduction">
+      <h1 class="hero-name">
+        <span>Dylan</span>
+        <span>Venditti</span>
+      </h1>
+
+      <div class="hero-foot">
+        <p class="hero-lede">
+          I build control software for robots, most recently a knee brace driven by the wearer’s own
+          muscle signals. Now at Duke, I’m working on continuum robots, hand-tracking teleoperation and
+          underwater robots.
+        </p>
+
+        <dl class="title-block">
+          <div class="tb-cell">
+            <dt>Discipline</dt>
+            <dd>Robotics and biological engineering</dd>
+          </div>
+          <div class="tb-cell">
+            <dt>Currently</dt>
+            <dd>Student researcher, Duke Robotics</dd>
+          </div>
+          <div class="tb-cell">
+            <dt>Education</dt>
+            <dd><span class="nowrap">M.Eng., Duke, 2027</span><br><span class="nowrap">B.S., LSU, 2026</span></dd>
+          </div>
+          <div class="tb-cell">
+            <dt>Based in</dt>
+            <dd>Durham, NC</dd>
+          </div>
+          <div class="tb-cell tb-rev tb-wide">
+            <dt>Last revised</dt>
+            <dd>
+              <svg class="rev-mark" viewBox="0 0 26 23" aria-hidden="true">
+                <path d="M13 1.6 24.4 21.4H1.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <text x="13" y="18" text-anchor="middle">A</text>
+              </svg>
+              <span>Oct 2026</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section wrap" id="about" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">About</h2>
+      <div class="section-body about-body">
+        <div class="about-intro">
+        <div class="prose">
+          <p>
+            I came to robotics through biological engineering. At Louisiana State University I earned a
+            B.S. in Biological Engineering with a minor in Robotics Engineering, graduating summa cum laude
+            in 2026. I’m now in Duke’s M.Eng. program in Robotics and Autonomy, where I do research on
+            autonomous underwater vehicles.
+          </p>
+          <p>
+            Most of my work sits between measurement and control: getting clean signals from people and
+            sensors, then using them to drive hardware safely. Before Duke I spent a year and a half in a
+            clinical biomechanics lab at Ochsner Health, and led the technical side of a powered knee
+            brace driven by the wearer’s own muscle signals.
+          </p>
+        </div>
+        <img class="portrait" src="assets/dylan.jpg" width="600" height="600" alt="Dylan Venditti">
+        </div>
+
+        <dl class="toolkit">
+          <div>
+            <dt>Programming</dt>
+            <dd>Python with NumPy and PyTorch, MATLAB, C++, Git</dd>
+          </div>
+          <div>
+            <dt>Robotics</dt>
+            <dd>ROS 2, motor and actuator control, EMG acquisition and filtering, sensor integration</dd>
+          </div>
+          <div>
+            <dt>Design</dt>
+            <dd>Autodesk Fusion 360, 3D printing</dd>
+          </div>
+          <div>
+            <dt>Motion capture</dt>
+            <dd>Vicon Nexus, Qualisys, Visual3D</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CURRENT WORK: projects in progress. Move one to Projects when it's done. -->
+    <section class="section wrap" id="current" aria-labelledby="current-title">
+      <h2 class="section-title" id="current-title">Current work</h2>
+      <div class="section-body">
+        <p class="section-intro">
+          What I’m working on this fall. Everything here is still in progress, and I’ll add results as
+          they come in.
+        </p>
+
+        <div class="interests">
+          <article class="interest" id="current-auv">
+            <h3>Autonomous underwater vehicle</h3>
+            <p class="interest-question">
+              What does an underwater robot need to navigate and collect a sample with no one at the controls?
+            </p>
+            <p>
+              I’m helping adapt a commercial Blue Robotics underwater vehicle for fully autonomous operation
+              and robotic manipulation, and evaluating it as a platform for Navy-partnered coral sampling.
+              Autonomous navigation and control come next.
+            </p>
+            <dl class="project-meta">
+              <div><dt>Context</dt><dd>Research, Duke Robotics</dd></div>
+              <div><dt>Status</dt><dd>In progress</dd></div>
+            </dl>
+          </article>
+
+          <article class="interest" id="current-spirobs">
+            <h3>Collapsible SpiRobs</h3>
+            <p class="interest-question">
+              What shapes can a spiral robot reach if it can also change its length?
+            </p>
+            <p>
+              SpiRobs are tendon-driven robots built on a logarithmic spiral, the same curl found in octopus
+              arms. We’re adding a variable-length action and studying the geometries it opens up, with an
+              eye on sharp turns in endonasal and endoscopic tools and, possibly, manipulation for
+              underwater coral farming. I’m part of the design work, and I’m focused on control: getting
+              the tendons to work together rather than against each other.
+            </p>
+            <dl class="project-meta">
+              <div><dt>Context</dt><dd>Continuum Robotics course, Duke</dd></div>
+              <div><dt>Status</dt><dd>In progress</dd></div>
+            </dl>
+          </article>
+
+          <article class="interest" id="current-hand">
+            <h3>Markerless hand tracking for robot teleoperation</h3>
+            <p class="interest-question">
+              Can two ordinary cameras track a hand well enough to steer a robot arm?
+            </p>
+            <p>
+              I’m building a two-camera system that tracks the joints of a bare hand, with no markers, and
+              estimates its position and orientation. That pose is mapped onto a collaborative robot arm
+              with a standard gripper, so the arm follows the operator’s hand. It builds on my clinical
+              motion-capture work, minus the markers.
+            </p>
+            <dl class="project-meta">
+              <div><dt>Context</dt><dd>Course project, Duke</dd></div>
+              <div><dt>Status</dt><dd>In progress</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS: copy a <li class="project"> block to add another -->
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title" id="projects-title">Projects</h2>
+      <div class="section-body">
+        <ul class="projects">
+
+          <!-- FEATURED PROJECT: MFlex-65 -->
+          <li class="project project--featured" id="project-mflex">
+            <p class="project-year">2026</p>
+            <div class="project-body">
+              <h3>MFlex-65: a muscle-controlled powered knee brace</h3>
+              <p>
+                A hip-knee orthosis with a motorized knee that reads the wearer’s own muscle signals
+                and helps bend and straighten the leg. It’s designed for gait rehabilitation and muscle
+                strengthening in people with lower-limb weakness after a stroke or spinal cord injury.
+                Because the patient’s own muscle activity drives the motion, each session trains both the
+                muscle and the nerve pathway that controls it. It’s also a lower-cost alternative to
+                commercial powered orthoses. This was our senior design project, built by a team of six
+                with a clinical sponsor at Ochsner Health.
+              </p>
+
+              <div class="project-media">
+                <figure>
+                  <img src="assets/projects/mflex-65/brace.jpg" width="540" height="900"
+                       alt="The MFlex-65 brace worn on the leg: a waist belt carrying the electronics, a cable running down a rigid thigh brace, and a round motor at the knee hinge.">
+                  <figcaption>The control electronics ride on a waist belt to keep weight off the leg. The motor sits on the knee hinge.</figcaption>
+                </figure>
+                <figure>
+                  <video class="demo-video" src="assets/projects/mflex-65/demo.mp4"
+                         poster="assets/projects/mflex-65/demo-poster.jpg" width="540" height="900"
+                         autoplay muted loop playsinline controls preload="metadata"
+                         aria-label="Demonstration of brace kinematics in response to user EMG signals"></video>
+                  <figcaption>Demonstration of brace kinematics in response to user EMG signals.</figcaption>
+                </figure>
+              </div>
+
+              <div class="clinic">
+                <figure class="clinic-photo">
+                  <img src="assets/projects/mflex-65/clinic.jpg" width="341" height="488"
+                       alt="A seated patient wearing the brace on the lower leg while a clinician kneels beside it. Faces are blurred.">
+                  <figcaption>Working with a patient in the clinic. Faces blurred for privacy.</figcaption>
+                </figure>
+                <figure class="pull-quote">
+                  <blockquote>
+                    <p>
+                      “Patients need to see rewards. If they can control knee flexion using this device, it
+                      can be wildly encouraging… The goal is to strengthen the muscle and strengthen the
+                      neural pathway to the muscle.”
+                    </p>
+                  </blockquote>
+                  <figcaption>Dr. Eddie Austin, PT, OT, PhD, project sponsor</figcaption>
+                </figure>
+              </div>
+
+              <h4 class="project-subhead">How the controller works</h4>
+              <p>
+                As the team’s technical lead, I designed the control architecture end to end. Most
+                EMG-driven orthoses map muscle signal straight to motor torque. Ours instead treats it as a
+                torque on a simulated lower leg, adds modeled gravity and damping, and integrates the result
+                into a speed command 200 times a second. Every command then passes through a three-layer
+                safety envelope that keeps the knee between 0 and 65°: it slows the joint near each limit,
+                stops the integrator from winding up, and caps speed outright. A watchdog zeroes the output
+                if feedback from the motor drops out. In bench testing, this made the limits much easier to
+                enforce than direct torque control.
+              </p>
+
+              <figure class="diagram">
+                <div class="diagram-scroll">
+                  <svg viewBox="0 0 736 350" role="img" aria-labelledby="dg-title dg-desc">
+                    <title id="dg-title">MFlex-65 control loop</title>
+                    <desc id="dg-desc">EMG sensors on the hamstring and quadriceps feed signal conditioning, which produces a normalized effort between minus one and one. That sets an effort torque. A dynamics model combines it with gravity and damping torques computed from the joint angle and speed, and integrates to a speed command. Safety limits keep the joint between 0 and 65 degrees before the command goes to the motor over CAN. A watchdog stops the motor if encoder feedback is missing for 500 milliseconds.</desc>
+                    <defs>
+                      <marker id="arrow-ink" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                        <path d="M0 0 8 4 0 8Z" class="dg-head"/>
+                      </marker>
+                      <marker id="arrow-red" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                        <path d="M0 0 8 4 0 8Z" class="dg-head-red"/>
+                      </marker>
+                    </defs>
+
+                    <!-- row 1 -->
+                    <g class="dg-box">
+                      <rect x="1" y="16" width="152" height="72"/>
+                      <text x="13" y="40" class="dg-title">EMG sensors</text>
+                      <text x="13" y="60" class="dg-detail">Hamstring and</text>
+                      <text x="13" y="76" class="dg-detail">quadriceps</text>
+                    </g>
+                    <g class="dg-box">
+                      <rect x="195" y="16" width="152" height="72"/>
+                      <text x="207" y="40" class="dg-title">Signal conditioning</text>
+                      <text x="207" y="60" class="dg-detail">Envelope, normalize</text>
+                      <text x="207" y="76" class="dg-detail"><tspan class="dg-var">ε</tspan> ∈ [−1, 1]</text>
+                    </g>
+                    <g class="dg-box">
+                      <rect x="390" y="16" width="152" height="72"/>
+                      <text x="402" y="40" class="dg-title">Effort torque</text>
+                      <text x="402" y="60" class="dg-detail"><tspan class="dg-var">τ</tspan> = <tspan class="dg-var">ε</tspan> · <tspan class="dg-var">τ</tspan><tspan class="dg-sub" dy="3">max</tspan></text>
+                    </g>
+                    <g class="dg-box">
+                      <rect x="583" y="16" width="152" height="72"/>
+                      <text x="595" y="40" class="dg-title">Dynamics model</text>
+                      <text x="595" y="60" class="dg-detail"><tspan class="dg-var">α</tspan> = <tspan class="dg-var">τ</tspan><tspan class="dg-sub" dy="3">net</tspan><tspan dy="-3"> / </tspan><tspan class="dg-var">J</tspan></text>
+                      <text x="595" y="76" class="dg-detail"><tspan class="dg-var">ω</tspan> += <tspan class="dg-var">α</tspan> · Δ<tspan class="dg-var">t</tspan></text>
+                    </g>
+
+                    <!-- row 2 -->
+                    <g class="dg-box">
+                      <rect x="195" y="176" width="152" height="72"/>
+                      <text x="207" y="200" class="dg-title">Gravity and damping</text>
+                      <text x="207" y="220" class="dg-detail"><tspan class="dg-var">τ</tspan><tspan class="dg-sub" dy="3">g</tspan><tspan dy="-3"> = </tspan><tspan class="dg-var">mgl</tspan> · sin <tspan class="dg-var">θ</tspan></text>
+                      <text x="207" y="236" class="dg-detail"><tspan class="dg-var">τ</tspan><tspan class="dg-sub" dy="3">d</tspan><tspan dy="-3"> = −</tspan><tspan class="dg-var">Bω</tspan></text>
+                    </g>
+                    <g class="dg-box">
+                      <rect x="390" y="176" width="152" height="72"/>
+                      <text x="402" y="200" class="dg-title">Motor</text>
+                      <text x="402" y="220" class="dg-detail">CubeMars AK10-9</text>
+                      <text x="402" y="236" class="dg-detail">speed command, CAN</text>
+                    </g>
+                    <g class="dg-box dg-safety">
+                      <rect x="583" y="176" width="152" height="72"/>
+                      <text x="595" y="200" class="dg-title">Safety limits</text>
+                      <text x="595" y="220" class="dg-detail">0° ≤ <tspan class="dg-var">θ</tspan> ≤ 65°</text>
+                      <text x="595" y="236" class="dg-detail">slows near the limits</text>
+                    </g>
+
+                    <!-- row 3 -->
+                    <g class="dg-box dg-safety dg-dashed">
+                      <rect x="390" y="290" width="345" height="56"/>
+                      <text x="402" y="313" class="dg-title">Watchdog</text>
+                      <text x="402" y="333" class="dg-detail">Stops the motor after 500 ms without encoder feedback</text>
+                    </g>
+
+                    <!-- signal lines -->
+                    <g class="dg-line">
+                      <path d="M153 52H193" marker-end="url(#arrow-ink)"/>
+                      <path d="M347 52H388" marker-end="url(#arrow-ink)"/>
+                      <path d="M542 52H581" marker-end="url(#arrow-ink)"/>
+                      <path d="M700 88V174" marker-end="url(#arrow-ink)"/>
+                      <path d="M583 212H544" marker-end="url(#arrow-ink)"/>
+                      <path d="M390 212H349" marker-end="url(#arrow-ink)"/>
+                      <path d="M271 176V132H618V90" marker-end="url(#arrow-ink)"/>
+                    </g>
+                    <path class="dg-line dg-line-red" d="M466 248V288" marker-end="url(#arrow-red)"/>
+
+                    <text x="692" y="152" class="dg-label" text-anchor="end"><tspan class="dg-var">ω</tspan> command</text>
+                    <text x="369.5" y="204" class="dg-label" text-anchor="middle"><tspan class="dg-var">θ</tspan>, <tspan class="dg-var">ω</tspan></text>
+                  </svg>
+                </div>
+                <figcaption>
+                  The control loop. Muscle effort sets a torque, the dynamics model turns it into a speed
+                  command, and the stages outlined in red keep the joint in a safe range.
+                  <span class="scroll-hint">Swipe sideways to see the whole diagram.</span>
+                </figcaption>
+              </figure>
+
+              <dl class="project-meta">
+                <div><dt>Role</dt><dd>Technical lead, control architecture</dd></div>
+                <div><dt>Team</dt><dd>Six students</dd></div>
+                <div><dt>Built with</dt><dd>Python, Raspberry Pi, CAN bus, MyoWare EMG, Arduino</dd></div>
+              </dl>
+              <p class="project-links">
+                <a href="https://github.com/dvendi1/MFlex-65">Code on GitHub</a>
+              </p>
+            </div>
+          </li>
+
+          <li class="project" id="project-arm">
+            <p class="project-year">2026</p>
+            <div class="project-body">
+              <h3>Motion control for a six-axis robot arm</h3>
+              <p>
+                A complete motion stack in Python for a low-cost, 3D-printed arm modeled on an industrial
+                welding robot. It covers forward kinematics from DH parameters, damped-least-squares inverse
+                kinematics with per-joint weighting and servo limits enforced on every iteration, and a GUI
+                where you enter waypoints and the arm follows a Cartesian path between them.
+              </p>
+              <dl class="project-meta">
+                <div><dt>Course</dt><dd>Industrial Robotics, LSU</dd></div>
+                <div><dt>Built with</dt><dd>Python, 3D printing</dd></div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="project" id="project-mocap">
+            <p class="project-year">2025</p>
+            <div class="project-body">
+              <h3>Automated gait reports from motion capture</h3>
+              <p>
+                Python tools that turn raw motion-capture output into standardized graphical reports for
+                clinicians. Processing time per patient dropped from about two hours to ten minutes, and
+                the errors that came with copying numbers by hand went away.
+              </p>
+              <dl class="project-meta">
+                <div><dt>Where</dt><dd>Clinical biomechanics lab, Ochsner Health</dd></div>
+                <div><dt>Built with</dt><dd>Python</dd></div>
+              </dl>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE: newest first -->
+    <section class="section wrap" id="experience" aria-labelledby="experience-title">
+      <h2 class="section-title" id="experience-title">Experience</h2>
+      <div class="section-body">
+        <h3 class="group-title">Research and work</h3>
+        <ol class="timeline">
+          <li class="entry">
+            <p class="entry-dates">Sep 2026 to now</p>
+            <div>
+              <h4>Student researcher, Duke Robotics</h4>
+              <ul class="entry-points">
+                <li>Adapting a commercial underwater vehicle for autonomous navigation and robotic manipulation.</li>
+                <li>Evaluating it as a platform for Navy-partnered coral sampling.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="entry">
+            <p class="entry-dates">Jan 2025 to Jun 2026</p>
+            <div>
+              <h4>Clinical biomechanics research intern, Ochsner Health</h4>
+              <ul class="entry-points">
+                <li>Built Python tools that cut per-patient report processing from two hours to ten minutes.</li>
+                <li>Owned quality control of motion-capture data in Vicon Nexus and Visual3D, flagging trials affected by marker dropout or placement error.</li>
+                <li>Analyzed joint kinematics and gait metrics and presented findings to clinicians.</li>
+                <li>Collected data on Vicon and Qualisys systems, including calibration and marker placement.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="entry">
+            <p class="entry-dates">Aug 2024 to Dec 2025</p>
+            <div>
+              <h4>Undergraduate teaching assistant, Louisiana State University</h4>
+              <ul class="entry-points">
+                <li>Coached first-year engineering students through Autodesk Fusion 360, Excel and core engineering workflows.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="entry">
+            <p class="entry-dates">Summer 2024</p>
+            <div>
+              <h4>Design and project management intern, Syracuse Fitness</h4>
+              <ul class="entry-points">
+                <li>Produced dimensioned floor plans and 3D renderings for gyms, universities and homes.</li>
+                <li>Gave narrated design walkthroughs that supported about $150K in closed contracts.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="group-title">Education</h3>
+        <ol class="timeline">
+          <li class="entry">
+            <p class="entry-dates">Expected Dec 2027</p>
+            <div>
+              <h4>M.Eng. Robotics and Autonomy, Duke University</h4>
+              <ul class="entry-points">
+                <li>Coursework in continuum robotics, medical robotics and surgical technologies, and robotics.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="entry">
+            <p class="entry-dates">2022 to 2026</p>
+            <div>
+              <h4>B.S. Biological Engineering, minor in Robotics Engineering, Louisiana State University</h4>
+              <ul class="entry-points">
+                <li>Summa cum laude, GPA 4.03 out of 4.30.</li>
+                <li>Tau Beta Pi Engineering Honor Society.</li>
+                <li>Coursework in industrial robotics, quantitative biology and experimental methods.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+
+        <p class="resume-link"><a href="assets/resume.pdf">Download my resume (PDF)</a></p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section wrap" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Contact</h2>
+      <div class="section-body">
+        <p class="section-intro">
+          I’m happy to talk about research, robotics roles, or anything on this page.
+          Email is the best way to reach me.
+        </p>
+        <p class="contact-email"><a href="mailto:dylan.venditti@duke.edu">dylan.venditti@duke.edu</a></p>
+        <ul class="contact-links">
+          <li><a href="https://github.com/dvendi1">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/dylan-venditti">LinkedIn</a></li>
+          <li><a href="assets/resume.pdf">Resume (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>Last revised October 2026. Plain HTML and CSS, hosted on GitHub Pages.</p>
+  </footer>
+
+  <script>
+    // Respect "reduce motion": don't autoplay the demo video.
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll("video[autoplay]").forEach(function (v) {
+        v.removeAttribute("autoplay");
+        v.pause();
+      });
+    }
+  </script>
+</body>
+</html>
